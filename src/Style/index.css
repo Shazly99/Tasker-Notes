@@ -1,0 +1,32 @@
+.nav-link{
+    font-size: 25px !important;
+}
+
+.Note{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+
+}
+.nav-link{
+    cursor: pointer !important;
+}
+
+/* Small */
+@media (min-width: 768px) {
+    .w-Form{
+        width: 75%;
+    }
+  }
+  
+  /* Medium */
+  @media (max-width: 992px) {
+    .w-Form{
+        width: 75%;
+    }
+  }
+  
+  /* Large */
+  @media (min-width: 1199px) {
+    .w-Form{
+        width: 50%;
+    }
+  }

@@ -1,0 +1,66 @@
+ body {
+   /* background-color: #131722 ; */
+ }
+
+ .navbar-brand,
+ .nav-link {
+   color: white !important;
+ }
+
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,400;0,600;1,100;1,400&display=swap');
+
+ :root {
+   --bg-main: #131722;
+   --main-color: #fff;
+   --light-color: #24baef
+   --lightBg-Color: #212529;
+ }
+
+ body {
+   background-color: var(--bg-main);
+   color: var(--main-color);
+   font-family: 'Montserrat Alternates';
+ }
+
+ .navbar-toggler {
+   border: 1px solid #fff;
+ }
+
+ .navbar-toggler-icon {
+   color: #fff !important;
+ }
+
+ 
+::-webkit-scrollbar{
+  width: 4px;
+}
+
+::-webkit-scrollbar-track{
+  background-color:transparent;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #AAAAAA;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background-color: #aaaaaa8d;
+}
+.fa-solid{
+  color:#727c85 ;
+}
+*{
+  transition: color 0.3s;
+
+}
+.solid:hover{
+  color: rgba(36, 186, 239, 0.6) !important;
+}
+
+.nav-link,.solid{
+  color:#949cb0 !important ;
+}
+.nav-link:hover {
+      color: rgba(36, 186, 239, 0.6) !important;
+ }

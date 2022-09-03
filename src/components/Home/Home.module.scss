@@ -1,0 +1,70 @@
+$deleteColor: #dc3545;
+$bgNote: #F9E792;
+$editColor: #28A745;
+$addColor: #0dcaf0;
+$hoverColor: #fff;
+$fontIcon: 20px;
+
+@mixin colorTransition() {
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+
+.home {
+    .btn .add {
+        color: $addColor;
+        border: 1px solid $addColor;
+        display: none !important;
+        @include colorTransition();
+
+        &:hover {
+            color: $hoverColor;
+            background-color: $addColor;
+        }
+    }
+
+    .note {
+        position: relative;
+        background-color: $bgNote;
+        color: black;
+    }
+
+    .iconEdit,
+    .iconTrash {
+        cursor: pointer;
+    }
+
+    .iconEdit:hover,
+    .iconTrash:hover {
+        font-size: $fontIcon;
+        @include colorTransition();
+    }
+
+    .iconEdit:hover {
+        color: $editColor;
+    }
+
+    .iconTrash:hover {
+        color: $deleteColor;
+    }
+
+    .option {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 8px 10px;
+
+    }
+
+    .header {
+        position: relative;
+    }
+}
+
+.title {
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+}
