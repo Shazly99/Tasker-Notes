@@ -68,7 +68,7 @@ export default function Register() {
       setpassword(password)
     } else {
       setisLoading(true)
-      let { data } = await Axios.post('https://route-egypt-api.herokuapp.com/signup', user)
+      let { data } = await Axios.post('https://sticky-note-fe.vercel.app/signup', user)
       setisLoading(false)
        if (data.message == 'success') {
         setisLoading(true)
