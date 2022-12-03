@@ -15,7 +15,7 @@ export default function Home() {
   // ========> (Display all notes)
   const [Notes, setNotes] = useState([])
   async function getNotes() {
-    const { data } = await axios.get('https://route-egypt-api.herokuapp.com/getUserNotes', {
+    const { data } = await axios.get('https://sticky-note-fe.vercel.app/getUserNotes', {
       headers: {
         userID,
         Token: token
@@ -31,7 +31,7 @@ export default function Home() {
   const [addNewNote, setaddNote] = useState({ "title": "", "desc": "", "userID": userID, "token": token })
   async function addNote(e) {
     e.preventDefault();
-    let { data } = await axios.post('https://route-egypt-api.herokuapp.com/addNote', addNewNote)
+    let { data } = await axios.post('https://sticky-note-fe.vercel.app/addNote', addNewNote)
     if (data.message == "success") {
       getNotes()
       document.getElementById('add-form').reset()
@@ -67,7 +67,7 @@ export default function Home() {
       confirmButtonText: 'Yes, delete it!'
     }).then((result) => {
       if (result.isConfirmed) {
-        axios.delete('https://route-egypt-api.herokuapp.com/deleteNote', {
+        axios.delete('https://sticky-note-fe.vercel.app/deleteNote', {
           data: {
             NoteID,
             token
