@@ -104,7 +104,7 @@ export default function Home() {
 
   async function updateNote(e) {
     e.preventDefault()
-    let { data } = await axios.put(`https://route-egypt-api.herokuapp.com/updateNote`, addNewNote)
+    let { data } = await axios.put(`https://sticky-note-fe.vercel.app/updateNote`, addNewNote)
     getNotes()
     const Toast = Swal.mixin({
       toast: true,
